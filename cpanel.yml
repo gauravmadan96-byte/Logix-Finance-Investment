@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/a178007a/repositories/Logix-Finance-Investment
+    - /bin/cp -R * $DEPLOYPATH
