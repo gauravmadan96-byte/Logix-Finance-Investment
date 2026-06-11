@@ -25,7 +25,7 @@ import RegulatoryDisclosures from "./pages/policies/RegulatoryDisclosures";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ScrollToTop />
         <SiteLayout>
           <Routes>
