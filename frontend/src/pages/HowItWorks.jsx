@@ -20,11 +20,11 @@ export default function HowItWorks() {
       {/* HERO */}
       <section className="hero-bg">
         <div className="container-x py-14 md:py-20">
-          <div className="text-xs uppercase tracking-[0.18em] text-[#B85C38] font-semibold mb-3" style={{ fontFamily: "Manrope" }}>
-            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#B85C38] no-underline transition-colors">Home</Link>
+          <div className="text-xs uppercase tracking-[0.18em] text-[#F58220] font-semibold mb-3" style={{ fontFamily: "Manrope" }}>
+            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#F58220] no-underline transition-colors">Home</Link>
             <span className="mx-2 opacity-50">/</span>How It Works
           </div>
-          <h1 className="text-3xl md:text-5xl font-light text-[#F9F8F6] max-w-3xl" style={{ fontFamily: "Cormorant Garamond" }}>
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#F9F8F6] max-w-3xl" style={{ fontFamily: "Poppins" }}>
             Simple and Hassle-Free Loan Process
           </h1>
           <p className="mt-4 text-[#c4cbc8] max-w-2xl" style={{ fontFamily: "Manrope" }}>
@@ -40,14 +40,14 @@ export default function HowItWorks() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {STEPS.map((s, i) => (
               <div key={s.t} data-testid={`step-${i}`} className="card-feature relative bg-white">
-                <div className="absolute top-5 right-5 text-4xl font-light text-[#E5E3DB]"
-                  style={{ fontFamily: "Cormorant Garamond" }}>
+                <div className="absolute top-5 right-5 text-4xl font-semibold text-[#E5E3DB]"
+                  style={{ fontFamily: "Poppins" }}>
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <div className="icon-circle">
                   <s.icon size={28} />
                 </div>
-                <h3 className="text-lg font-medium mt-5 text-[#1A2421]">{s.t}</h3>
+                <h3 className="text-lg font-medium mt-5 text-[#0f2855]">{s.t}</h3>
                 <p className="text-sm text-[#64746C] mt-2 leading-relaxed" style={{ fontFamily: "Manrope" }}>{s.d}</p>
               </div>
             ))}
@@ -61,7 +61,7 @@ export default function HowItWorks() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="card-feature bg-white">
               <div className="eyebrow">Right to Exit</div>
-              <h3 className="text-xl font-medium mt-3 text-[#1A2421]" style={{ fontFamily: "Cormorant Garamond" }}>
+              <h3 className="text-xl font-semibold mt-3 text-[#0f2855]" style={{ fontFamily: "Poppins" }}>
                 3-Day Free Look / Cooling-Off Period
               </h3>
               <p className="text-[#64746C] mt-3 leading-relaxed text-sm" style={{ fontFamily: "Manrope" }}>
@@ -72,7 +72,7 @@ export default function HowItWorks() {
             </div>
             <div className="card-feature bg-white">
               <div className="eyebrow">Right to Know</div>
-              <h3 className="text-xl font-medium mt-3 text-[#1A2421]" style={{ fontFamily: "Cormorant Garamond" }}>
+              <h3 className="text-xl font-semibold mt-3 text-[#0f2855]" style={{ fontFamily: "Poppins" }}>
                 Written Key Fact Statement
               </h3>
               <p className="text-[#64746C] mt-3 leading-relaxed text-sm" style={{ fontFamily: "Manrope" }}>

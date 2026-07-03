@@ -4,10 +4,10 @@ import { X } from "../../components/common/Placeholder";
 
 export default function PrivacyPolicy() {
   return (
-    <PolicyLayout title="Privacy Policy" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Privacy Policy" lastUpdated="03 Jul 2026">
       <p>
         At Logix Finance &amp; Investment Private Limited, accessible from
-        www.logixfinance&amp;investment.com, protecting the privacy and confidentiality
+        www.logixfinanceandinvestment.com, protecting the privacy and confidentiality
         of our customers and website visitors is one of our highest priorities. This
         Privacy Policy explains how we collect, use, store, process, and safeguard your
         information when you access our website, services, and digital platforms. If
@@ -141,8 +141,8 @@ export default function PrivacyPolicy() {
       <h2>For More Information</h2>
       <table className="gov-table">
         <tbody>
-          <tr><td style={{ width: "30%" }}><strong>Email</strong></td><td>info@logixfinance&amp;investment.com</td></tr>
-          <tr><td><strong>Phone No.</strong></td><td>879624245</td></tr>
+          <tr><td style={{ width: "30%" }}><strong>Email</strong></td><td>info@logixfinanceandinvestment.com</td></tr>
+          <tr><td><strong>Phone No.</strong></td><td>8796242452</td></tr>
         </tbody>
       </table>
     </PolicyLayout>

@@ -32,12 +32,12 @@ export default function PolicyLayout({ title, lastUpdated, children }) {
       {/* Page header band */}
       <section className="hero-bg">
         <div className="container-x py-12 md:py-16">
-          <div className="text-xs uppercase tracking-[0.18em] text-[#B85C38] font-semibold mb-3" data-testid="breadcrumb" style={{ fontFamily: "Manrope" }}>
-            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#B85C38] transition-colors no-underline">Home</Link>
+          <div className="text-xs uppercase tracking-[0.18em] text-[#F58220] font-semibold mb-3" data-testid="breadcrumb" style={{ fontFamily: "Manrope" }}>
+            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#F58220] transition-colors no-underline">Home</Link>
             <span className="mx-2 opacity-50">/</span>
             Policies
           </div>
-          <h1 className="text-3xl md:text-5xl font-light text-[#F9F8F6] leading-tight" style={{ fontFamily: "Cormorant Garamond" }}>
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#F9F8F6] leading-tight" style={{ fontFamily: "Poppins" }}>
             {title}
           </h1>
         </div>
@@ -48,8 +48,8 @@ export default function PolicyLayout({ title, lastUpdated, children }) {
           {/* Sidebar */}
           <aside className="md:col-span-3">
             <div className="card-soft" data-testid="policy-sidebar">
-              <h3 className="text-xs font-bold text-[#1A2421] tracking-wider mb-4"
-                style={{ fontFamily: "Manrope" }}>
+              <h3 className="text-xs font-bold text-[#0f2855] tracking-wider mb-4"
+                style={{ fontFamily: "Open Sans" }}>
                 POLICIES &amp; DISCLOSURES
               </h3>
               <ul className="space-y-1">
@@ -60,12 +60,12 @@ export default function PolicyLayout({ title, lastUpdated, children }) {
                       <Link
                         to={p.to}
                         data-testid={`sidebar-${p.to.split("/").pop()}`}
-                        className={`block text-[13px] py-1.5 px-3 -mx-3 rounded-sm no-underline transition-colors ${
+                        className={`block text-[13px] py-1.5 px-3 -mx-3 rounded-md no-underline transition-colors ${
                           active 
-                            ? "bg-[#B85C38]/10 text-[#B85C38] font-semibold" 
-                            : "text-[#1A2421] hover:text-[#B85C38] hover:bg-[#F3F1EC]"
+                            ? "bg-[#F58220]/10 text-[#F58220] font-semibold" 
+                            : "text-[#0f2855] hover:text-[#F58220] hover:bg-[#F3F1EC]"
                         }`}
-                        style={{ fontFamily: "Manrope" }}
+                        style={{ fontFamily: "Open Sans" }}
                       >
                         {p.label}
                       </Link>
@@ -75,8 +75,8 @@ export default function PolicyLayout({ title, lastUpdated, children }) {
               </ul>
             </div>
 
-            <div className="card-soft mt-4 bg-[#F3F1EC] border-[#E5E3DB]" style={{ fontFamily: "Manrope" }}>
-              <div className="text-xs font-semibold text-[#B85C38]">Need a copy?</div>
+            <div className="card-soft mt-4 bg-[#F3F1EC] border-[#E5E3DB]" style={{ fontFamily: "Open Sans" }}>
+              <div className="text-xs font-semibold text-[#F58220]">Need a copy?</div>
               <p className="text-[12px] text-[#64746C] mt-1.5 mb-0 leading-relaxed">
                 Printed versions of all policies are available at our registered office on request.
               </p>
@@ -88,11 +88,11 @@ export default function PolicyLayout({ title, lastUpdated, children }) {
             <div className="card-soft bg-white">
               <div className="gov-content">{children}</div>
               <hr className="my-6 border-[#E5E3DB]" />
-              <div className="text-xs text-[#64746C]" style={{ fontFamily: "Manrope" }}>
-                <strong className="text-[#1A2421]">Last Updated:</strong>{" "}
+              <div className="text-xs text-[#64746C]" style={{ fontFamily: "Open Sans" }}>
+                <strong className="text-[#0f2855]">Last Updated:</strong>{" "}
                 {lastUpdated || <span className="ph">DD MMM YYYY</span>}
                 <span className="mx-3 opacity-50">|</span>
-                <strong className="text-[#1A2421]">Approved by:</strong> Board of Directors,
+                <strong className="text-[#0f2855]">Approved by:</strong> Board of Directors,
                 Logix Finance &amp; Investment Pvt Ltd
               </div>
             </div>

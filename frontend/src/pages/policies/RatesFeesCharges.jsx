@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function RatesFeesCharges() {
   return (
-    <PolicyLayout title="Rates, Fees & Charges" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Rates, Fees & Charges" lastUpdated="03 Jul 2026">
       <h2>Summary</h2>
       <p>
         This page summarises the rates of interest and the schedule of fees and charges
@@ -85,7 +85,7 @@ export default function RatesFeesCharges() {
       <ul>
         <li>The above schedule is indicative. The actual charges applicable to a particular loan are disclosed in the sanction letter and KFS.</li>
         <li>The Company may revise the rates and charges from time to time. Any change shall be applied prospectively in accordance with the Interest Rate Policy.</li>
-        <li>For any clarification, please write to <strong>info@logixfinance&amp;investment.com</strong> or call <strong>879624245</strong>.</li>
+        <li>For any clarification, please write to <strong>info@logixfinanceandinvestment.com</strong> or call <strong>8796242452</strong>.</li>
       </ul>
     </PolicyLayout>
   );

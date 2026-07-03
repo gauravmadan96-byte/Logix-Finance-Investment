@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function KYCAML() {
   return (
-    <PolicyLayout title="KYC & Anti-Money Laundering Policy" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="KYC & Anti-Money Laundering Policy" lastUpdated="03 Jul 2026">
       <h2>1. Overview</h2>
       <p>
         Logix Finance &amp; Investment Private Limited has adopted this Know Your
@@ -63,9 +63,9 @@ export default function KYCAML() {
       <h2>7. Designated Officers</h2>
       <table className="gov-table">
         <tbody>
-          <tr><td style={{ width: "35%" }}><strong>Principal Officer (PMLA)</strong></td><td><X /></td></tr>
-          <tr><td><strong>Designated Director (PMLA)</strong></td><td><X /></td></tr>
-          <tr><td><strong>Compliance Officer</strong></td><td><X /></td></tr>
+          <tr><td style={{ width: "35%" }}><strong>Principal Officer (PMLA)</strong></td><td>Nitin Sharma (DIN: 10927192)</td></tr>
+          <tr><td><strong>Designated Director (PMLA)</strong></td><td>Sarabjeet Kaur (DIN: 08917539)</td></tr>
+          <tr><td><strong>Compliance Officer</strong></td><td>Sarabjeet Kaur (DIN: 08917539)</td></tr>
         </tbody>
       </table>
     </PolicyLayout>

@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function RefundCancellation() {
   return (
-    <PolicyLayout title="Refund & Cancellation Policy" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Refund & Cancellation Policy" lastUpdated="03 Jul 2026">
       <h2>1. Scope</h2>
       <p>
         This policy explains the circumstances under which loans may be cancelled and
@@ -17,8 +17,8 @@ export default function RefundCancellation() {
       <p>
         A borrower may withdraw the loan application at any time before disbursement at
         no cost. To do so, please write to{" "}
-        <strong>info@logixfinance&amp;investment.com</strong> or call{" "}
-        <strong>879624245</strong>.
+        <strong>info@logixfinanceandinvestment.com</strong> or call{" "}
+        <strong>8796242452</strong>.
       </p>
 
       <h2>3. Free Look / Cooling-Off Period</h2>
@@ -57,8 +57,8 @@ export default function RefundCancellation() {
       <h2>7. Refund Method &amp; Timeline</h2>
       <ul>
         <li>Refunds are processed only to the registered bank account from which the original payment was made.</li>
-        <li>Refunds are typically processed within <X>xx</X> working days of approval.</li>
-        <li>For any clarification on a refund, please contact <strong>info@logixfinance&amp;investment.com</strong>.</li>
+        <li>Refunds are typically processed within 7 working days of approval.</li>
+        <li>For any clarification on a refund, please contact <strong>info@logixfinanceandinvestment.com</strong>.</li>
       </ul>
     </PolicyLayout>
   );

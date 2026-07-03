@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function Disclaimer() {
   return (
-    <PolicyLayout title="Disclaimer" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Disclaimer" lastUpdated="03 Jul 2026">
       <h2>1. General Information</h2>
       <p>
         The content on this website is provided for general information purposes only
@@ -54,8 +54,8 @@ export default function Disclaimer() {
       </p>
       <ul>
         <li>Do not share your OTP, PAN, Aadhaar number, debit/credit card or bank credentials with anyone claiming to represent the Company.</li>
-        <li>Always verify communications — the official email is <strong>info@logixfinance&amp;investment.com</strong> and the official phone is <strong>879624245</strong>.</li>
-        <li>If you receive a suspicious call, message or email, please report it to <strong>grievance@logixfinance&amp;investment.com</strong> and to the National Cyber Crime Reporting Portal at <a href="https://cybercrime.gov.in" target="_blank" rel="noreferrer">cybercrime.gov.in</a>.</li>
+        <li>Always verify communications — the official email is <strong>info@logixfinanceandinvestment.com</strong> and the official phone is <strong>8796242452</strong>.</li>
+        <li>If you receive a suspicious call, message or email, please report it to <strong>grievance@logixfinanceandinvestment.com</strong> and to the National Cyber Crime Reporting Portal at <a href="https://cybercrime.gov.in" target="_blank" rel="noreferrer">cybercrime.gov.in</a>.</li>
       </ul>
     </PolicyLayout>
   );

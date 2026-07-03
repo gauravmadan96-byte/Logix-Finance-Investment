@@ -73,7 +73,7 @@ export default function Home() {
         <div className="container-x py-14 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7">
-              <div className="eyebrow mb-3" style={{ color: "#B85C38" }}>RBI-Registered NBFC</div>
+              <div className="eyebrow mb-3" style={{ color: "#F58220" }}>RBI-Registered NBFC</div>
               <h1 className="text-4xl md:text-5xl lg:text-[54px] font-light leading-[1.1] text-[#F9F8F6]">
                 Short Term Instant Loans &amp; Flexible Credit Lines
               </h1>
@@ -86,7 +86,7 @@ export default function Home() {
               <ul className="mt-7 space-y-2.5" style={{ fontFamily: "Manrope" }}>
                 {HERO_FEATURES.map((f) => (
                   <li key={f} className="flex items-start gap-3 text-[15px] text-[#F9F8F6]/95">
-                    <CheckCircle2 size={20} className="text-[#B85C38] mt-0.5 shrink-0" />
+                    <CheckCircle2 size={20} className="text-[#F58220] mt-0.5 shrink-0" />
                     <span>{f}</span>
                   </li>
                 ))}
@@ -107,14 +107,14 @@ export default function Home() {
                 <img
                   src={HERO_IMG}
                   alt="Modern glass office building interior"
-                  className="w-full rounded-sm object-cover border border-[#E5E3DB]/10"
+                  className="w-full rounded-md object-cover border border-[#E5E3DB]/10"
                   style={{ aspectRatio: "4/5", maxHeight: 540 }}
                 />
-                <div className="absolute -bottom-5 -left-5 bg-[#F9F8F6] text-[#1A2421] rounded-sm p-4 border border-[#E5E3DB] shadow-sm hidden md:block">
+                <div className="absolute -bottom-5 -left-5 bg-[#F9F8F6] text-[#0f2855] rounded-md p-4 border border-[#E5E3DB] shadow-sm hidden md:block">
                   <div className="text-2xl font-light leading-none">24 Hrs</div>
                   <div className="text-[10px] uppercase tracking-wider font-bold text-[#64746C] mt-1" style={{ fontFamily: "Manrope" }}>Quick Disbursal</div>
                 </div>
-                <div className="absolute -top-5 -right-5 bg-[#B85C38] text-white rounded-sm p-4 shadow-sm hidden md:block">
+                <div className="absolute -top-5 -right-5 bg-[#F58220] text-white rounded-md p-4 shadow-sm hidden md:block">
                   <div className="text-2xl font-light leading-none">100%</div>
                   <div className="text-[10px] uppercase tracking-wider font-bold mt-1" style={{ fontFamily: "Manrope" }}>Digital</div>
                 </div>
@@ -135,7 +135,7 @@ export default function Home() {
               { n: "99%", l: "Customer Satisfaction" },
             ].map((s) => (
               <div key={s.l} className="text-center">
-                <div className="stat-num text-[#1A2421]">{s.n}</div>
+                <div className="stat-num text-[#0f2855]">{s.n}</div>
                 <div className="stat-label">{s.l}</div>
               </div>
             ))}
@@ -157,14 +157,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {STEPS.map((s, i) => (
               <div key={s.t} data-testid={`step-${i}`} className="card-feature text-center relative bg-white">
-                <div className="absolute -top-3 -right-3 w-8 h-8 bg-[#B85C38] text-white rounded-full grid place-items-center font-bold text-xs"
+                <div className="absolute -top-3 -right-3 w-8 h-8 bg-[#F58220] text-white rounded-full grid place-items-center font-bold text-xs"
                   style={{ fontFamily: "Manrope" }}>
                   {i + 1}
                 </div>
                 <div className="icon-circle mx-auto">
                   <s.icon size={28} />
                 </div>
-                <h3 className="text-lg font-medium mt-5 text-[#1A2421]">{s.t}</h3>
+                <h3 className="text-lg font-medium mt-5 text-[#0f2855]">{s.t}</h3>
                 <p className="text-sm text-[#64746C] mt-2 leading-relaxed" style={{ fontFamily: "Manrope" }}>{s.d}</p>
               </div>
             ))}
@@ -194,15 +194,15 @@ export default function Home() {
                 <div className="icon-circle accent">
                   <p.icon size={26} />
                 </div>
-                <h3 className="text-lg font-medium mt-5 text-[#1A2421]">{p.title}</h3>
+                <h3 className="text-lg font-medium mt-5 text-[#0f2855]">{p.title}</h3>
                 <p className="text-sm text-[#64746C] mt-2 leading-relaxed" style={{ fontFamily: "Manrope" }}>{p.desc}</p>
 
                 <div className="mt-5 pt-4 border-t border-[#E5E3DB] text-xs space-y-1.5" style={{ fontFamily: "Manrope" }}>
-                  <div className="flex justify-between"><span className="text-[#64746C]">Amount</span><span className="font-semibold text-[#1A2421]">{p.range}</span></div>
-                  <div className="flex justify-between"><span className="text-[#64746C]">Tenure</span><span className="font-semibold text-[#1A2421]">{p.tenure}</span></div>
+                  <div className="flex justify-between"><span className="text-[#64746C]">Amount</span><span className="font-semibold text-[#0f2855]">{p.range}</span></div>
+                  <div className="flex justify-between"><span className="text-[#64746C]">Tenure</span><span className="font-semibold text-[#0f2855]">{p.tenure}</span></div>
                 </div>
 
-                <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#B85C38] group-hover:gap-2 transition-all" style={{ fontFamily: "Manrope" }}>
+                <div className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-[#F58220] group-hover:gap-2 transition-all" style={{ fontFamily: "Manrope" }}>
                   Know More <ArrowRight size={14} />
                 </div>
               </Link>
@@ -243,16 +243,16 @@ export default function Home() {
 
               <div className="mt-7 grid grid-cols-2 gap-4" style={{ fontFamily: "Manrope" }}>
                 <div className="flex items-start gap-3">
-                  <ShieldCheck size={20} className="text-[#B85C38] mt-1" />
+                  <ShieldCheck size={20} className="text-[#F58220] mt-1" />
                   <div>
-                    <div className="font-semibold text-[#1A2421]">RBI Compliant</div>
+                    <div className="font-semibold text-[#0f2855]">RBI Compliant</div>
                     <div className="text-xs text-[#64746C]">Registered NBFC</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Globe2 size={20} className="text-[#B85C38] mt-1" />
+                  <Globe2 size={20} className="text-[#F58220] mt-1" />
                   <div>
-                    <div className="font-semibold text-[#1A2421]">Pan India</div>
+                    <div className="font-semibold text-[#0f2855]">Pan India</div>
                     <div className="text-xs text-[#64746C]">Across cities</div>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function Home() {
                 <div className="icon-circle">
                   <w.icon size={26} />
                 </div>
-                <h3 className="text-lg font-medium mt-5 text-[#1A2421]">{w.t}</h3>
+                <h3 className="text-lg font-medium mt-5 text-[#0f2855]">{w.t}</h3>
                 <p className="text-sm text-[#64746C] mt-2 leading-relaxed" style={{ fontFamily: "Manrope" }}>{w.d}</p>
               </div>
             ))}

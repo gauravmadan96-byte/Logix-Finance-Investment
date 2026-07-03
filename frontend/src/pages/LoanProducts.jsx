@@ -53,11 +53,11 @@ export default function LoanProducts() {
       {/* HERO */}
       <section className="hero-bg">
         <div className="container-x py-14 md:py-20">
-          <div className="text-xs uppercase tracking-[0.18em] text-[#B85C38] font-semibold mb-3" style={{ fontFamily: "Manrope" }}>
-            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#B85C38] no-underline transition-colors">Home</Link>
+          <div className="text-xs uppercase tracking-[0.18em] text-[#F58220] font-semibold mb-3" style={{ fontFamily: "Manrope" }}>
+            <Link to="/" className="text-[#F9F8F6]/80 hover:text-[#F58220] no-underline transition-colors">Home</Link>
             <span className="mx-2 opacity-50">/</span>Loan Products
           </div>
-          <h1 className="text-3xl md:text-5xl font-light text-[#F9F8F6] max-w-3xl" style={{ fontFamily: "Cormorant Garamond" }}>
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#F9F8F6] max-w-3xl" style={{ fontFamily: "Poppins" }}>
             Our Loan Products
           </h1>
           <p className="mt-4 text-[#c4cbc8] max-w-2xl" style={{ fontFamily: "Manrope" }}>
@@ -109,25 +109,25 @@ export default function LoanProducts() {
                   <div className="icon-circle accent" style={{ width: 72, height: 72 }}>
                     <p.icon size={32} />
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-light mt-5 text-[#1A2421]" style={{ fontFamily: "Cormorant Garamond" }}>
-                    {p.title}
-                  </h2>
-                  <p className="text-[#64746C] mt-3 text-[14.5px] leading-relaxed" style={{ fontFamily: "Manrope" }}>{p.purpose}</p>
+                    <h2 className="text-2xl md:text-3xl font-semibold mt-5 text-[#0f2855]" style={{ fontFamily: "Poppins" }}>
+                      {p.title}
+                    </h2>
+                    <p className="text-[#64746C] mt-3 text-[14.5px] leading-relaxed" style={{ fontFamily: "Open Sans" }}>{p.purpose}</p>
 
-                  <div className="mt-5 space-y-2 text-[14px]" style={{ fontFamily: "Manrope" }}>
-                    <div className="flex justify-between border-b border-[#E5E3DB] py-2">
-                      <span className="text-[#64746C]">Amount</span>
-                      <span className="font-semibold text-[#1A2421]">{p.amount}</span>
+                    <div className="mt-5 space-y-2 text-[14px]" style={{ fontFamily: "Open Sans" }}>
+                      <div className="flex justify-between border-b border-[#E5E3DB] py-2">
+                        <span className="text-[#64746C]">Amount</span>
+                        <span className="font-semibold text-[#0f2855]">{p.amount}</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#E5E3DB] py-2">
+                        <span className="text-[#64746C]">Tenure</span>
+                        <span className="font-semibold text-[#0f2855]">{p.tenure}</span>
+                      </div>
+                      <div className="flex justify-between border-b border-[#E5E3DB] py-2">
+                        <span className="text-[#64746C]">Interest Rate</span>
+                        <span className="font-semibold text-[#0f2855]">{p.rate}</span>
+                      </div>
                     </div>
-                    <div className="flex justify-between border-b border-[#E5E3DB] py-2">
-                      <span className="text-[#64746C]">Tenure</span>
-                      <span className="font-semibold text-[#1A2421]">{p.tenure}</span>
-                    </div>
-                    <div className="flex justify-between border-b border-[#E5E3DB] py-2">
-                      <span className="text-[#64746C]">Interest Rate</span>
-                      <span className="font-semibold text-[#1A2421]">{p.rate}</span>
-                    </div>
-                  </div>
 
                   <Link to="/contact" data-testid={`product-apply-${i}`} className="btn btn-accent mt-6">
                     Apply Now <ArrowRight size={14} />
@@ -140,8 +140,8 @@ export default function LoanProducts() {
                       <div className="eyebrow">Eligibility</div>
                       <ul className="mt-3 space-y-2.5" style={{ fontFamily: "Manrope" }}>
                         {p.eligibility.map((e, idx) => (
-                          <li key={idx} className="flex items-start gap-2.5 text-[14px] text-[#1A2421]">
-                            <CheckCircle2 size={16} className="text-[#B85C38] mt-0.5 shrink-0" />
+                          <li key={idx} className="flex items-start gap-2.5 text-[14px] text-[#0f2855]">
+                            <CheckCircle2 size={16} className="text-[#F58220] mt-0.5 shrink-0" />
                             <span>{e}</span>
                           </li>
                         ))}
@@ -149,20 +149,20 @@ export default function LoanProducts() {
                     </div>
                     <div>
                       <div className="eyebrow">Documents Required</div>
-                      <ul className="mt-3 space-y-2.5" style={{ fontFamily: "Manrope" }}>
+                      <ul className="mt-3 space-y-2.5" style={{ fontFamily: "Open Sans" }}>
                         {p.docs.map((d, idx) => (
-                          <li key={idx} className="flex items-start gap-2.5 text-[14px] text-[#1A2421]">
-                            <FileText size={16} className="text-[#B85C38] mt-0.5 shrink-0" />
+                          <li key={idx} className="flex items-start gap-2.5 text-[14px] text-[#0f2855]">
+                            <FileText size={16} className="text-[#F58220] mt-0.5 shrink-0" />
                             <span>{d}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                   </div>
-                  <div className="mt-6 text-xs text-[#64746C]" style={{ fontFamily: "Manrope" }}>
+                  <div className="mt-6 text-xs text-[#64746C]" style={{ fontFamily: "Open Sans" }}>
                     For applicable fees and charges, please see our{" "}
-                    <Link to="/policies/rates-fees-charges" className="text-[#1A2421] underline hover:text-[#B85C38]">Rates, Fees &amp; Charges</Link> page and{" "}
-                    <Link to="/policies/interest-rate-policy" className="text-[#1A2421] underline hover:text-[#B85C38]">Interest Rate Policy</Link>.
+                    <Link to="/policies/rates-fees-charges" className="text-[#0f2855] underline hover:text-[#F58220]">Rates, Fees &amp; Charges</Link> page and{" "}
+                    <Link to="/policies/interest-rate-policy" className="text-[#0f2855] underline hover:text-[#F58220]">Interest Rate Policy</Link>.
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@ export default function LoanProducts() {
       <section className="section bg-white">
         <div className="container-x">
           <div className="card-soft bg-[#F3F1EC] border-[#E5E3DB]" style={{ fontFamily: "Manrope" }}>
-            <h3 className="font-medium text-[#B85C38]" style={{ fontFamily: "Cormorant Garamond", fontSize: 20 }}>
+            <h3 className="font-semibold text-[#F58220]" style={{ fontFamily: "Poppins", fontSize: 20 }}>
               Free Look / Cooling-Off Period
             </h3>
             <p className="text-sm text-[#64746C] mt-2 mb-0 leading-relaxed">

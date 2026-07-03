@@ -4,21 +4,21 @@ import { X } from "../../components/common/Placeholder";
 
 export default function RegulatoryDisclosures() {
   return (
-    <PolicyLayout title="Regulatory & Statutory Disclosures" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Regulatory & Statutory Disclosures" lastUpdated="03 Jul 2026">
       <h2>1. Corporate Information</h2>
       <table className="gov-table">
         <tbody>
           <tr><td style={{ width: "40%" }}><strong>Legal Entity Name</strong></td><td>Logix Finance &amp; Investment Private Limited</td></tr>
-          <tr><td><strong>Corporate Identity Number (CIN)</strong></td><td><X /></td></tr>
-          <tr><td><strong>RBI Certificate of Registration No.</strong></td><td><X /></td></tr>
-          <tr><td><strong>Category of Registration</strong></td><td><X>NBFC – Non-Deposit Taking</X></td></tr>
-          <tr><td><strong>GSTIN</strong></td><td><X /></td></tr>
-          <tr><td><strong>Registered Office</strong></td><td><X />, <X />, <X /> – <X />, India</td></tr>
-          <tr><td><strong>Corporate Office</strong></td><td><X />, <X />, <X /> – <X />, India</td></tr>
+          <tr><td><strong>Corporate Identity Number (CIN)</strong></td><td>U65929DL2008PTC179113</td></tr>
+          <tr><td><strong>RBI Certificate of Registration No.</strong></td><td>N-14.03191</td></tr>
+          <tr><td><strong>Category of Registration</strong></td><td>NBFC – Non-Deposit Taking</td></tr>
+          <tr><td><strong>GSTIN</strong></td><td>07AABCL4912A1Z3</td></tr>
+          <tr><td><strong>Registered Office</strong></td><td>WA-69A, Gali No. 18, Plot No. 1, WA Block, Shakarpur, Laxmi Nagar, East Delhi, India, 110092</td></tr>
+          <tr><td><strong>Corporate Office</strong></td><td>WA-69A, Gali No. 18, Plot No. 1, WA Block, Shakarpur, Laxmi Nagar, East Delhi, India, 110092</td></tr>
           <tr><td><strong>Statutory Auditor</strong></td><td><X /></td></tr>
-          <tr><td><strong>Customer Care</strong></td><td>879624245</td></tr>
-          <tr><td><strong>Email</strong></td><td>info@logixfinance&amp;investment.com</td></tr>
-          <tr><td><strong>Grievance Email</strong></td><td>grievance@logixfinance&amp;investment.com</td></tr>
+          <tr><td><strong>Customer Care</strong></td><td>8796242452</td></tr>
+          <tr><td><strong>Email</strong></td><td>info@logixfinanceandinvestment.com</td></tr>
+          <tr><td><strong>Grievance Email</strong></td><td>grievance@logixfinanceandinvestment.com</td></tr>
         </tbody>
       </table>
 
@@ -28,12 +28,12 @@ export default function RegulatoryDisclosures() {
           <tr><th>Sl. No.</th><th>Name</th><th>Designation</th><th>DIN / Identifier</th></tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td><X /></td><td>Director</td><td><X /></td></tr>
-          <tr><td>2</td><td><X /></td><td>Director</td><td><X /></td></tr>
-          <tr><td>3</td><td><X /></td><td>Director</td><td><X /></td></tr>
-          <tr><td>4</td><td><X /></td><td>Compliance Officer</td><td><X /></td></tr>
-          <tr><td>5</td><td><X /></td><td>Grievance Redressal Officer</td><td><X /></td></tr>
-          <tr><td>6</td><td><X /></td><td>Principal Officer (PMLA)</td><td><X /></td></tr>
+          <tr><td>1</td><td>Sarabjeet Kaur</td><td>Director</td><td>08917539</td></tr>
+          <tr><td>2</td><td>Nitin Sharma</td><td>Director</td><td>10927192</td></tr>
+          <tr><td>3</td><td>Pooja Agrawal</td><td>Director</td><td>11366204</td></tr>
+          <tr><td>4</td><td>Sarabjeet Kaur</td><td>Compliance Officer</td><td>08917539</td></tr>
+          <tr><td>5</td><td>Pooja Agrawal</td><td>Grievance Redressal Officer</td><td>11366204</td></tr>
+          <tr><td>6</td><td>Nitin Sharma</td><td>Principal Officer (PMLA)</td><td>10927192</td></tr>
         </tbody>
       </table>
 

@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function TermsConditions() {
   return (
-    <PolicyLayout title="Terms & Conditions" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Terms & Conditions" lastUpdated="03 Jul 2026">
       <h2>1. Acceptance of Terms</h2>
       <p>
         By accessing or using this website, you agree to be bound by these Terms,
@@ -69,7 +69,7 @@ export default function TermsConditions() {
       <p>
         These Terms are governed by the laws of India. Any disputes arising under or
         in connection with these Terms shall be subject to the exclusive jurisdiction
-        of the competent courts at <X />, <X /> State.
+        of the competent courts at Delhi, Delhi State.
       </p>
     </PolicyLayout>
   );

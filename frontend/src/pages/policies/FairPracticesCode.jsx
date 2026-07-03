@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function FairPracticesCode() {
   return (
-    <PolicyLayout title="Fair Practices Code" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Fair Practices Code" lastUpdated="03 Jul 2026">
       <h2>Background</h2>
       <p>
         This Fair Practices Code (“FPC” or “Code”) has been formulated in accordance

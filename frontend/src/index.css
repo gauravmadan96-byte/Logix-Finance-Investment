@@ -2,34 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: local("Poppins"), local("Poppins-Regular");
+}
+@font-face {
+    font-family: "Manrope";
+    src: local("Open Sans"), local("OpenSans");
+}
+
 /* =========================================================
    Logix Finance & Investment — Organic & Earthy / Old Money Tech Fusion
-   Palette: Bone White (#F9F8F6) · Deep Forest (#1A2421) · Terracotta (#B85C38) · Muted Sage Grey (#64746C) · Border (#E5E3DB)
+   Palette: Bone White (#F9F8F6) · Navy Blue (#0f2855) · Orange (#F58220) · Muted Sage Grey (#64746C) · Border (#E5E3DB)
    Fonts: Cormorant Garamond (headings) + Manrope (body) + JetBrains Mono (placeholders)
    ========================================================= */
 
 @layer base {
     :root {
         --background: 40 9% 97%;       /* #F9F8F6 */
-        --foreground: 165 15% 13%;      /* #1A2421 */
+        --foreground: 218 70% 20%;      /* #0f2855 */
         --card: 0 0% 100%;             /* #FFFFFF */
-        --card-foreground: 165 15% 13%; /* #1A2421 */
+        --card-foreground: 218 70% 20%; /* #0f2855 */
         --popover: 0 0% 100%;
-        --popover-foreground: 165 15% 13%;
-        --primary: 165 15% 13%;        /* #1A2421 (Deep Forest) */
+        --popover-foreground: 218 70% 20%;
+        --primary: 218 70% 20%;        /* #0f2855 (Navy Blue) */
         --primary-foreground: 40 9% 97%;
         --secondary: 45 14% 94%;       /* #F3F1EC */
-        --secondary-foreground: 165 15% 13%;
+        --secondary-foreground: 218 70% 20%;
         --muted: 45 14% 94%;
         --muted-foreground: 153 8% 42%;/* #64746C */
-        --accent: 17 53% 47%;          /* #B85C38 (Terracotta) */
+        --accent: 28 92% 54%;          /* #F58220 (Vibrant Orange) */
         --accent-foreground: 0 0% 100%;
         --destructive: 0 84.2% 60.2%;
         --destructive-foreground: 0 0% 98%;
         --border: 47 10% 88%;          /* #E5E3DB */
         --input: 47 10% 88%;
-        --ring: 165 15% 13%;
-        --radius: 0.125rem;            /* sharp/small radius rounded-sm */
+        --ring: 218 70% 20%;
+        --radius: 0.375rem;            /* standard rounded-md */
     }
 }
 
@@ -42,26 +51,26 @@
     }
     body {
         background-color: #F9F8F6;
-        color: #1A2421;
-        font-family: "Manrope", "Segoe UI", Roboto, Arial, sans-serif;
+        color: #0f2855;
+        font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif;
         font-size: 15px;
         line-height: 1.65;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
     h1, h2, h3, h4, h5, h6 {
-        font-family: "Cormorant Garamond", Georgia, serif;
-        color: #1A2421;
-        font-weight: 500; /* Let the serif character shine, do not bold by default */
+        font-family: "Poppins", "Segoe UI", sans-serif;
+        color: #0f2855;
+        font-weight: 600;
         line-height: 1.25;
         margin: 0;
     }
     a {
-        color: #1A2421;
+        color: #0f2855;
         transition: color 0.2s ease;
     }
     a:hover {
-        color: #B85C38;
+        color: #F58220;
     }
     p {
         margin: 0 0 12px 0;
@@ -80,7 +89,7 @@
         background-color: #F3F1EC;
     }
     .section-dark {
-        background-color: #1A2421;
+        background-color: #0f2855;
         color: #F9F8F6;
     }
     .section-dark h1, .section-dark h2, .section-dark h3 {
@@ -89,25 +98,25 @@
 
     /* Buttons */
     .btn {
-        @apply inline-flex items-center gap-2 px-6 py-3 rounded-sm text-sm font-semibold transition-all duration-200 no-underline;
+        @apply inline-flex items-center gap-2 px-6 py-3 rounded-md text-sm font-semibold transition-all duration-200 no-underline;
         font-family: "Manrope", sans-serif;
     }
     .btn-primary {
-        background-color: #1A2421;
+        background-color: #0f2855;
         color: #F9F8F6 !important;
     }
     .btn-primary:hover {
-        background-color: #2A3632;
+        background-color: #133e8a;
         color: #F9F8F6 !important;
         transform: translateY(-1px);
     }
     .btn-outline {
         background-color: transparent;
-        color: #1A2421 !important;
-        border: 1px solid #1A2421;
+        color: #0f2855 !important;
+        border: 1px solid #0f2855;
     }
     .btn-outline:hover {
-        background-color: #1A2421;
+        background-color: #0f2855;
         color: #F9F8F6 !important;
     }
     .btn-outline-white {
@@ -117,36 +126,36 @@
     }
     .btn-outline-white:hover {
         background-color: #F9F8F6;
-        color: #1A2421 !important;
+        color: #0f2855 !important;
     }
     .btn-accent {
-        background-color: #B85C38;
+        background-color: #F58220;
         color: #FFFFFF !important;
     }
     .btn-accent:hover {
-        background-color: #A04F30;
+        background-color: #e07216;
         color: #FFFFFF !important;
         transform: translateY(-1px);
     }
 
     /* Cards */
     .card-soft {
-        @apply bg-white rounded-sm border border-[#E5E3DB] p-6 transition-all duration-200;
+        @apply bg-white rounded-md border border-[#E5E3DB] p-6 transition-all duration-200;
         box-shadow: none;
     }
     .card-soft:hover {
         transform: translateY(-4px);
-        border-color: #1A2421;
-        box-shadow: 0 4px 12px rgba(26, 36, 33, 0.05);
+        border-color: #0f2855;
+        box-shadow: 0 4px 12px rgba(15, 40, 85, 0.05);
     }
     .card-feature {
-        @apply bg-white rounded-sm p-7 border border-[#E5E3DB] transition-all duration-200;
+        @apply bg-white rounded-md p-7 border border-[#E5E3DB] transition-all duration-200;
         box-shadow: none;
     }
     .card-feature:hover {
         transform: translateY(-4px);
-        border-color: #1A2421;
-        box-shadow: 0 4px 12px rgba(26, 36, 33, 0.05);
+        border-color: #0f2855;
+        box-shadow: 0 4px 12px rgba(15, 40, 85, 0.05);
     }
 
     /* Icon circle */
@@ -155,53 +164,53 @@
         width: 64px;
         height: 64px;
         background-color: #F3F1EC;
-        color: #1A2421;
+        color: #0f2855;
         border: 1px solid #E5E3DB;
     }
     .icon-circle.accent {
-        background-color: rgba(184, 92, 56, 0.1);
-        color: #B85C38;
-        border-color: rgba(184, 92, 56, 0.2);
+        background-color: rgba(245, 130, 32, 0.1);
+        color: #F58220;
+        border-color: rgba(245, 130, 32, 0.2);
     }
 
     /* Eyebrow tag */
     .eyebrow {
-        @apply inline-block text-xs font-bold uppercase tracking-[0.20em] text-[#B85C38];
-        font-family: "Manrope", sans-serif;
+        @apply inline-block text-xs font-bold uppercase tracking-[0.20em] text-[#F58220];
+        font-family: "Open Sans", sans-serif;
     }
 
     /* Section heading */
     .section-title {
-        @apply text-3xl md:text-4xl font-light text-[#1A2421] leading-tight;
-        font-family: "Cormorant Garamond", Georgia, serif;
+        @apply text-3xl md:text-4xl font-semibold text-[#0f2855] leading-tight;
+        font-family: "Poppins", "Segoe UI", sans-serif;
     }
     .section-sub {
         @apply text-base text-[#64746C] mt-3 max-w-2xl;
-        font-family: "Manrope", sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
 
     /* Stat */
     .stat-num {
-        @apply text-4xl md:text-5xl font-light text-[#1A2421] leading-none;
-        font-family: "Cormorant Garamond", Georgia, serif;
+        @apply text-4xl md:text-5xl font-semibold text-[#0f2855] leading-none;
+        font-family: "Poppins", "Segoe UI", sans-serif;
     }
     .stat-label {
         @apply text-xs uppercase tracking-[0.20em] text-[#64746C] mt-2 font-semibold;
-        font-family: "Manrope", sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
 
     /* Form fields */
     .field-label {
-        @apply block text-sm font-semibold text-[#1A2421] mb-1.5;
-        font-family: "Manrope", sans-serif;
+        @apply block text-sm font-semibold text-[#0f2855] mb-1.5;
+        font-family: "Open Sans", sans-serif;
     }
     .field-input {
-        @apply w-full bg-white border border-[#E5E3DB] rounded-sm px-4 py-2.5 text-sm text-[#1A2421] transition-colors;
-        font-family: "Manrope", sans-serif;
+        @apply w-full bg-white border border-[#E5E3DB] rounded-md px-4 py-2.5 text-sm text-[#0f2855] transition-colors;
+        font-family: "Open Sans", sans-serif;
     }
     .field-input:focus {
         outline: none;
-        border-color: #1A2421;
+        border-color: #0f2855;
     }
 
     /* Placeholder marker (subtle badge awaiting user edit) */
@@ -229,11 +238,11 @@
         padding: 10px 14px;
         text-align: left;
         vertical-align: top;
-        font-family: "Manrope", sans-serif;
+        font-family: "Open Sans", sans-serif;
     }
     .gov-table th {
         background-color: #F3F1EC;
-        color: #1A2421;
+        color: #0f2855;
         font-weight: 700;
     }
     .gov-table tr:nth-child(even) td {
@@ -244,22 +253,22 @@
     .gov-content {
         font-size: 15px;
         line-height: 1.75;
-        color: #1A2421;
-        font-family: "Manrope", sans-serif;
+        color: #0f2855;
+        font-family: "Open Sans", sans-serif;
     }
     .gov-content h2 {
-        font-family: "Cormorant Garamond", Georgia, serif;
+        font-family: "Poppins", "Segoe UI", sans-serif;
         font-size: 24px;
-        color: #1A2421;
+        color: #0f2855;
         margin: 26px 0 10px 0;
         padding-bottom: 6px;
         border-bottom: 1px solid #E5E3DB;
-        font-weight: 500;
+        font-weight: 600;
     }
     .gov-content h3 {
-        font-family: "Cormorant Garamond", Georgia, serif;
+        font-family: "Poppins", "Segoe UI", sans-serif;
         font-size: 18px;
-        color: #1A2421;
+        color: #0f2855;
         margin: 18px 0 6px 0;
         font-weight: 600;
     }
@@ -280,20 +289,20 @@
         margin: 0 0 12px 0;
     }
     .gov-content strong {
-        color: #1A2421;
+        color: #0f2855;
         font-weight: 700;
     }
     .gov-content a {
-        color: #1A2421;
+        color: #0f2855;
         text-decoration: underline;
     }
     .gov-content a:hover {
-        color: #B85C38;
+        color: #F58220;
     }
 
     /* Hero gradient background */
     .hero-bg {
-        background-color: #1A2421;
+        background: linear-gradient(135deg, #0f2855 0%, #133e8a 100%);
         color: #F9F8F6;
     }
     .hero-bg h1, .hero-bg h2, .hero-bg h3 {
@@ -302,7 +311,7 @@
 
     /* Mini icon strip (lucide stroke) */
     .stroke-acc {
-        stroke: #B85C38;
+        stroke: #F58220;
     }
 }
 

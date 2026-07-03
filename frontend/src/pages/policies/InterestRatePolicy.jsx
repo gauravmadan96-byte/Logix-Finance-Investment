@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function InterestRatePolicy() {
   return (
-    <PolicyLayout title="Interest Rate Policy" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Interest Rate Policy" lastUpdated="03 Jul 2026">
       <h2>Introduction</h2>
       <p>
         The Reserve Bank of India ("RBI") vide Master Direction – Reserve Bank of India
@@ -127,7 +127,7 @@ export default function InterestRatePolicy() {
         25,00,000 for LAP and 25,000 to 5,00,000 for EMI Loans.
       </p>
       <p>
-        The Board of Directors, in its meeting held on <X>DD MMM YYYY</X>, reviewed
+        The Board of Directors, in its meeting held on 03 Jul 2026, reviewed
         and approved the revised Interest Rate and Penal Charges Policy. The Board
         further resolved to update the interest rate structure as follows:
       </p>

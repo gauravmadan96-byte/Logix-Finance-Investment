@@ -4,7 +4,7 @@ import { X } from "../../components/common/Placeholder";
 
 export default function GrievanceRedressal() {
   return (
-    <PolicyLayout title="Grievance Redressal Cell" lastUpdated={<X>DD MMM YYYY</X>}>
+    <PolicyLayout title="Grievance Redressal Cell" lastUpdated="03 Jul 2026">
       <h2>Our Commitment to You</h2>
       <p>
         At Logix Finance &amp; Investment Private Limited, customer satisfaction and
@@ -28,9 +28,9 @@ export default function GrievanceRedressal() {
       <h2>Contact Details</h2>
       <table className="gov-table">
         <tbody>
-          <tr><td style={{ width: "30%" }}><strong>Number</strong></td><td>879624245</td></tr>
+          <tr><td style={{ width: "30%" }}><strong>Number</strong></td><td>8796242451</td></tr>
           <tr><td><strong>Timing</strong></td><td>10:30 AM to 6:30 PM</td></tr>
-          <tr><td><strong>Email</strong></td><td>grievance@logixfinance&amp;investment.com</td></tr>
+          <tr><td><strong>Email</strong></td><td>grievance@logixfinanceandinvestment.com</td></tr>
         </tbody>
       </table>
 
