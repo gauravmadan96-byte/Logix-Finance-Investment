@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Logix-Finance-Investment/static/css/main.53e502e9.css",
-    "main.js": "/Logix-Finance-Investment/static/js/main.5dd1b36c.js",
+    "main.css": "/Logix-Finance-Investment/static/css/main.f2a5bd22.css",
+    "main.js": "/Logix-Finance-Investment/static/js/main.bdaf55ae.js",
     "index.html": "/Logix-Finance-Investment/index.html",
-    "main.53e502e9.css.map": "/Logix-Finance-Investment/static/css/main.53e502e9.css.map",
-    "main.5dd1b36c.js.map": "/Logix-Finance-Investment/static/js/main.5dd1b36c.js.map"
+    "main.f2a5bd22.css.map": "/Logix-Finance-Investment/static/css/main.f2a5bd22.css.map",
+    "main.bdaf55ae.js.map": "/Logix-Finance-Investment/static/js/main.bdaf55ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.53e502e9.css",
-    "static/js/main.5dd1b36c.js"
+    "static/css/main.f2a5bd22.css",
+    "static/js/main.bdaf55ae.js"
   ]
 }
